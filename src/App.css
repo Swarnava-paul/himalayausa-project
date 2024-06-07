@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+}
+.mainImageFlex{
+    width: 30%;
+    height: 50vh;
+    position:absolute;
+    bottom: 20%;
+    justify-content:center;
+
+}
