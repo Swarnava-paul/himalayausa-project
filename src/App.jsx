@@ -6,12 +6,14 @@ import { AllRoutes } from './route/allRouter'
 //COMPONENTS
 import { Navbar } from './components/navbar'
 import { Footer } from './components/footer'
+import { ShopOnHomePage } from './components/shoponHomepge'
 function App() {
 
 
   return (
     <>
     <Navbar/>
+    <ShopOnHomePage/>
     <AllRoutes/>
     <Footer/>
     </>

@@ -6,11 +6,17 @@ import './index.css'
 //react router
 import { BrowserRouter } from 'react-router-dom'
 import { ChakraProvider } from '@chakra-ui/react'
+
+//CONTEXTS
+import { ShopDisplayContextProvider } from './shopcontext/shopContext.jsx'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
     <ChakraProvider>
-    <App />
+      <ShopDisplayContextProvider>
+        <App />
+      </ShopDisplayContextProvider>
     </ChakraProvider>
     </BrowserRouter>
   </React.StrictMode>,

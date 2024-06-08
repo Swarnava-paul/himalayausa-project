@@ -10,7 +10,7 @@ export const ShopByCategory=()=>{
         <>
          <Grid mt={40}>
             <Flex justify='center' fontSize={30} fontFamily='sans-serif'>Shop By Category</Flex>
-            <Flex justify='center' align='center' justifyContent='space-evenly'  w='90%' margin='auto' mt={60}>
+            <Grid justify='center' align='center' rowGap={['30px','60px','30px','']} templateColumns={['repeat(1,70%)','repeat(1,70%)','repeat(2,50%)','repeat(3,30%)']} justifyContent='space-evenly'  w='90%' margin='auto' mt={['100px','90px','50px','60px']}>
               {
                 imageArray.map((item,index)=>(
                     <Grid key={index} placeItems='center' rowGap={5} _hover={{transition:'0.60s',transform:'scale(1.1)'}}>
@@ -20,7 +20,7 @@ export const ShopByCategory=()=>{
                     </Grid>
                 ))
               }
-            </Flex>
+            </Grid>
          </Grid>
         </>
     )
