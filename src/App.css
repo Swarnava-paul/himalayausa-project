@@ -9,3 +9,18 @@
     justify-content:center;
 
 }
+.childofReview{
+    border: 0.5px solid #dcdada;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+.border{
+    border: 1px solid #bcbaba;
+    height: auto;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    font-size: 13px;
+}

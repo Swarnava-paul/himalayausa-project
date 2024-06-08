@@ -5,19 +5,15 @@ import { AllRoutes } from './route/allRouter'
 
 //COMPONENTS
 import { Navbar } from './components/navbar'
-import { MainImage } from './components/mainImage'
-import { ShopByCategory } from './components/shopbyCategory'
-import { BestSeller } from './components/bestSeller'
+import { Footer } from './components/footer'
 function App() {
 
 
   return (
     <>
     <Navbar/>
-    <MainImage/>
-    <ShopByCategory/>
-    <BestSeller/>
-   <AllRoutes/>
+    <AllRoutes/>
+    <Footer/>
     </>
   )
 }

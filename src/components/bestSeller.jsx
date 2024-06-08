@@ -1,5 +1,7 @@
 import { Text,Image,Grid,Flex } from "@chakra-ui/react"
 
+// components
+import {Reviews} from '../components/reviews'
 export const BestSeller=()=>{
 
     return(
@@ -13,7 +15,9 @@ export const BestSeller=()=>{
                  <Text fontSize={27}>with Herbal Supplements, Toothpaste & More!</Text>
                  <Text>Since 1930, Himalaya has been passionate about the healing wisdom of herbs. We offer a wide range of clinically-studied herbal supplements, toothpaste and personal care products that unlock the powerful healing benefits of herbs.</Text>
                 </Grid>
-             </Flex>
+             </Flex> {/** best seller first section */}
+
+             <Reviews/>
          </Grid>
         </>
     )
