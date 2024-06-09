@@ -11,7 +11,7 @@ export const Hamburger=()=>{
     const{displayHamburger,setDisplayHamburger}=useContext(hamburgerCOntext)
 
     return(
-        <Box display={displayHamburger} w='100%' bg='rgb(26, 33, 48,0.5)'  pos='absolute' h='100vh' position='fixed' top='0vh'>
+        <Box display={[displayHamburger,displayHamburger,displayHamburger,'none']} w='100%' bg='rgb(26, 33, 48,0.5)'  pos='absolute' h='100vh' position='fixed' top='0vh'>
            <Grid w='70%' bg='white' h='100%'>
 
                <Flex p={2} bg='white' align='center' gap={3} onClick={()=>{

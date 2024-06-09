@@ -17,7 +17,7 @@ export const Reviews=()=>{
    }
 
    intervalValue.current = setInterval(()=>{
-   setPosition(position=>position+420)
+   setPosition(position=>position+380)
    setScrollCount(scrollCount=>scrollCount+1)
    },3000)
 
@@ -55,11 +55,11 @@ export const Reviews=()=>{
       {
 
       reviewsArray.map((item, index) => (
-        <Grid key={index} flex="0 0 auto" w={390} className="childofReview" h="37vh" m='0.9rem'>
+        <Grid key={index} flex="0 0 auto" w={350} className="childofReview" h="33vh" m='0.9rem'>
 
-          <Grid mt={10} ml={10}>
+          <Grid mt={10} ml={10} pr={5}>
          <Flex w='8%' h='1vh' backgroundColor='teal'></Flex>
-         <Text fontSize={20} fontFamily='sans-serif'>{item.review}</Text>
+         <Text fontSize={16} fontFamily='sans-serif'>{item.review}</Text>
          <Text color='grey'>{item.reviewerName}</Text>
          </Grid>
 
