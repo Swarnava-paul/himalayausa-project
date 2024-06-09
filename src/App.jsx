@@ -7,12 +7,14 @@ import { AllRoutes } from './route/allRouter'
 import { Navbar } from './components/navbar'
 import { Footer } from './components/footer'
 import { ShopOnHomePage } from './components/shoponHomepge'
+import { Hamburger } from './components/hamburger'
 function App() {
 
 
   return (
     <>
     <Navbar/>
+    <Hamburger/>
     <ShopOnHomePage/>
     <AllRoutes/>
     <Footer/>

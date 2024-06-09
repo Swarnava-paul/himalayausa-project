@@ -2,12 +2,18 @@
 import { Image,Flex,Button,Grid ,Box} from "@chakra-ui/react"
 import { useContext } from "react"
 import { shopDisplayContext } from "../shopcontext/shopContext"
+import { hamburgerCOntext } from "../hamburgercontext/hamburgercontext"
+
 export const MainImage=()=>{
+
+
+    const{displayHamburger,setDisplayHamburger}=useContext(hamburgerCOntext)
 
     const{displayShop}=useContext(shopDisplayContext)
 
     return(
-       <Box display={displayShop=='none'?'block':'none'}>
+        <Box display={displayHamburger==='none'?'block':'none'}>
+       <Box  display={displayShop=='none'?'block':'none'}>
        <Flex position='relative'>
 
        <Image  w='100%' h={['80vh','95vh','100vh','120vh']} src='https://himalayausa.com/cdn/shop/files/Berberine_2_900x.jpg?v=1689623874'/>
@@ -18,6 +24,6 @@ export const MainImage=()=>{
         </Grid>
        </Flex>
        </Box>
-    
+       </Box>
     )
 }
