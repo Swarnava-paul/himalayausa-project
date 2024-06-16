@@ -2,7 +2,7 @@ import { Flex,Text,Image,Grid,Box} from "@chakra-ui/react"
 import { shopDisplayContext } from "../shopcontext/shopContext"
 import { hamburgerCOntext } from "../hamburgercontext/hamburgercontext"
 import { useContext } from "react"
-
+import { Link } from "react-router-dom"
 export const Navbar=()=>{
 
 const text={
@@ -41,7 +41,7 @@ const{displayHamburger,setDisplayHamburger}=useContext(hamburgerCOntext)
               }}>
              <Text sx={text}>Shop</Text>
              </Box>
-              <Text sx={text}>About</Text>
+              <Link style={{color:"grey"}} to='/about'>About</Link>
               <Text sx={text}>Store Locator</Text>
 
               </Box>
