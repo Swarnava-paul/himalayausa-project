@@ -45,7 +45,7 @@ switch (action.type){
     case 'our-initiative' : {
         return {
             component :<OurInitiative/>,
-            text : 'our-initiatives'
+            text : 'our-initiative'
         }
     }
 }
