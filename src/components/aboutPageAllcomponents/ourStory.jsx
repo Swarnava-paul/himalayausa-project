@@ -4,7 +4,7 @@ export const OurStory = () =>{
 
     return (
         <>
-        <h1></h1>
+        <h1>our story</h1>
         </>
     )
 }

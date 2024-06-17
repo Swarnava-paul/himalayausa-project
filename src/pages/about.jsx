@@ -4,11 +4,54 @@ import { useReducer } from "react";
 import { Box ,Image , Grid , Text, Flex ,Button, background} from "@chakra-ui/react";
 //COMPONENTS
 import { OurStory } from "../components/aboutPageAllcomponents/ourStory";
-import { color } from "framer-motion";
+import { OurRoots } from "../components/aboutPageAllcomponents/ourRoots";
+import { OurProcess } from "../components/aboutPageAllcomponents/OurProcess";
+import { OurScience } from "../components/aboutPageAllcomponents/ourScience";
+import { OurInitiative } from "../components/aboutPageAllcomponents/ourInitiatives";
 
-function determineComponentOfAboutPage () {
 
+function determineComponentOfAboutPage (componentOfAboutPage,action) {
+ 
+switch (action.type){
+ 
+    case 'our-story' : {
+       return {
+        component : <OurStory/>,
+        text : 'our-story'
+       }
+    }
+
+    case 'our-roots' : {
+        return {
+            component : <OurRoots/> ,
+            text : 'our-roots'
+        }
+    }
+
+    case 'our-process' : {
+        return {
+            component : <OurProcess/> ,
+            text : 'our-process'
+        }
+    }
+
+    case 'our-science' : {
+        return {
+            component : <OurScience/> ,
+            text : 'our-science'
+        }
+    }
+
+    case 'our-initiative' : {
+        return {
+            component :<OurInitiative/>,
+            text : 'our-initiatives'
+        }
+    }
 }
+} {/**manages the component of about page to be displayed on buttons click */}
+
+
 
 const About=()=>{
 
