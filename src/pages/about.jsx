@@ -58,13 +58,13 @@ const About=()=>{
 const[componentOfAboutPage , dispatch] = useReducer(determineComponentOfAboutPage,{component:<OurStory/>,text:'our-story'})
 
 const text = {
- fontSize:"56px",
+ fontSize:['20px','22px','56px','56px'],
  color:"white",
  fontWeight:"700"
 }
 
 const gridOfpositionedText = {
-    margin:'-25% 10%',
+    margin:['-50% 10%','-35% 10%','-30% 10%','-25% 10%'],
     placeItems:"center",
 }
 
@@ -77,29 +77,29 @@ const buttonContentWithDispatch = [
 ]
 
 const buttonStyle = {
-    width:"15%",
     borderRadius:"0px",
     fontWeight:"450"
 }
     return(
     <Box mt={20}>
-     <Box h='80vh' pos='relative'>
+     <Box h={['40vh','45vh','50vh','80vh']} pos='static'>
         <Image h='100%' w='100%' src='https://i.shgcdn.com/f95290db-d02e-433c-9564-4766788d684c/-/format/auto/-/preview/3000x3000/-/quality/lighter/'/>
          <Grid sx={gridOfpositionedText}>
             <Text sx={text}>Our Story</Text>
-            <Text color='white' fontSize={25} fontWeight='600' textAlign='center'>Founded in 1930, Himalaya remains family owned with products offered in over 100 countries.</Text>
+            <Text color='white' fontSize={['15px','18px','25px','25px']} fontWeight='600' textAlign='center'>Founded in 1930, Himalaya remains family owned with products offered in over 100 countries.</Text>
          </Grid>
      </Box> {/** box  holds main image of about page */}
 
-      <Flex mt={5} justify='space-evenly'>
+      <Grid mt={5} justifyContent='center' columnGap={10} rowGap={5} gridTemplateColumns={['repeat(2,40%)','repeat(3,26%)','repeat(5,15%)','repeat(5,15%)']} >
          {
             buttonContentWithDispatch.map((button , id) => (
-               <Button sx={buttonStyle} backgroundColor={componentOfAboutPage.text== button.dis ? 'RGB(0, 102, 102)' : 'white'} color={componentOfAboutPage.text== button.dis ? 'white' : 'RGB(0, 102, 102)'} key={id} onClick={()=>{
+               <Button position='static' sx={buttonStyle} _hover={{}} backgroundColor={componentOfAboutPage.text== button.dis ? 'RGB(0, 102, 102)' : 'white'} color={componentOfAboutPage.text== button.dis ? 'white' : 'RGB(0, 102, 102)'} key={id} onClick={()=>{
                 dispatch({type:button.dis})
                }}>{button.text}</Button>
             ))
          }
-      </Flex>
+      </Grid>
+
       <Flex w='100%' justify='center'>
       <hr style={{borderColor:"red",marginTop:"10px",width:'93%'}}/>
       </Flex>

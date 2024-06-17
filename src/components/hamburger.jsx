@@ -1,6 +1,6 @@
 
 import { Grid,Box,Flex ,Text} from "@chakra-ui/react"
-
+import { Link } from "react-router-dom"
 import { useContext } from "react"
 
 //CONTEXT
@@ -23,7 +23,7 @@ export const Hamburger=()=>{
 
                 <Grid  rowGap={1} bg='white' h='auto' fontSize={19} fontFamily='sans-serif' fontWeight='500' mt={1} pl={5} color='RGB(130, 109,)'>
                     <Text>Shop</Text>
-                    <Text>About</Text>
+                    <Link to='/about'>About</Link>
                     <Text>Store Locator</Text>
                 </Grid>
                   

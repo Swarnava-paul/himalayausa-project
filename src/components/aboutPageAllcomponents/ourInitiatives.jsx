@@ -27,12 +27,16 @@ export const OurInitiative = () =>{
  <Grid rowGap={10}>
 
 <Box sx={box}>
-  <Grid rowGap={5} w={['100%','100%','100%','45%']}  margin='auto'>
+  <Grid rowGap={5} w={['100%','100%','100%','45%']} margin='auto' >
      <Text sx={firstTexts}>Biodiversity Conservation for Sustainable Living</Text>
      <Text sx={childTexts}>Care for the earth remains a cornerstone of Himalaya Wellness Company’s core philosophy. Biodiversity for sustainable living is the practice of protecting and preserving the variety of species, habitats, ecosystems, and genetic diversity on earth, and Himalaya has made this an important part of our mission since we started over 90 years ago</Text>
      <Text sx={childTexts}>The video you're about to see shows Himalaya Wellness Company's initiatives in conservation, sustainability and replanting. Himalaya believes in nurturing the goodness of nature with a promise to safeguard the environment and a pledge to restore and conserve biodiversity.</Text>
   </Grid>
-  <iframe style={{margin:"auto"}} width="550" height="320" src="https://www.youtube.com/embed/zubH7PytqpM" title="Himalaya Wellness Company&#39;s Initiatives in Conserving Biodiversity for Sustainable Living" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullscreen></iframe>    
+
+  <Box w={['100%','90%','70%','45%']} margin='auto'>
+  <iframe style={{margin:"auto"}} width="100%" height="320" src="https://www.youtube.com/embed/zubH7PytqpM" title="Himalaya Wellness Company&#39;s Initiatives in Conserving Biodiversity for Sustainable Living" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullscreen></iframe>    
+  </Box>
+
 </Box>
 
 <hr style={{border:'0.50px solid grey',width:'95%',margin:'auto'}} />
